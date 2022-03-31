@@ -40,5 +40,5 @@ const distancia = lugares.filter(Lugar => Lugar.distanciacapital <= distanciaMax
 alert("Considerando esos valores, usted puede ir a:");
 
 for (let i = 0; i < distancia.length; i++) {
-    alert(distancia[i].nombre);
+    alert(distancia[i].nombre + " Y su distancia es: " + distancia[i].distanciacapital + "km.");
 }
