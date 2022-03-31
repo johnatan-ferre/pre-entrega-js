@@ -25,8 +25,8 @@ lugares.push(new Lugar("Grutas del Palacio", "Flores", 231, 8, "Ruta 14"));
 
 
 function listaDeNombres() {
-    document.write("Los siguientes son los lugares que puede visitar." + "<br>" + "<br>");
-    for (i = 0; i < lugares.length; i++) {
+    document.write("Puede vistar los siguientes lugares." + "<br>" + "<br>");
+    for (let i = 0; i < lugares.length; i++) {
         document.write(lugares[i].nombre + "\n" + "<br>");
     }
 }
@@ -37,70 +37,8 @@ let distanciaMax = Number(prompt("Ingrese la distancia máxima en km que quiere 
 
 const distancia = lugares.filter(Lugar => Lugar.distanciacapital <= distanciaMax)
 
-document.write("Los lugares que puede visitar son: " + "<br>" + "<br>")
+alert("Considerando esos valores, usted puede ir a:");
+
 for (let i = 0; i < distancia.length; i++) {
-    document.write(distancia[i].nombre + "\n" + "<br>");
+    alert(distancia[i].nombre);
 }
-
-
-
-
-
-// function distanciaMaxima(distanciaMax) {
-//     switch (distanciaMax) {
-//         case 100: {
-//             for (i = 0; i <= distancia.length; i++) {
-//                 console.log(distancia[i].nombre);
-//             }
-//             break;
-//         }
-//         case 200: {
-//             for (i = 0; i <= distancia.length; i++) {
-//                 console.log(distancia[i].nombre);
-//             }
-//             break;
-
-//         }
-//         case 300: {
-//             for (i = 0; i <= distancia.length; i++) {
-//                 console.log(distancia[i].nombre);
-//             }
-//             break;
-//         }
-//         case 400: {
-//             for (i = 0; i <= distancia.length; i++) {
-//                 console.log(distancia[i].nombre);
-//             }
-//             break;
-//         }
-//         case 500: {
-//             for (i = 0; i <= distancia.length; i++) {
-//                 console.log(distancia[i].nombre);
-//             }
-//             break;
-//         }
-//         default:
-//             alert("Ingresó un valor incorrecto");
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// do {
-//     let nombreIngresado = prompt("Ingrese nombre del lugar");
-//     lugares.push(nombreIngresado.toUpperCase());
-//     console.log(lugares);
-// } while (lugares.length < totalLugares);
-
-// alert("Su lista de lugares es: " + "\n" + lugares.join("\n"));
